@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOFWARD TECHNOLOGI PROJETS - S-T-P</title>
+  <link rel="stylesheet" href="./index.css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="nav-container">
+      <a class="logo" href="#">S-T-P</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="inicio">
+      <h1>SOFWARD TECHNOLOGI PROJETS</h1>
+      <p>Impulsamos tu futuro digital con diseño, desarrollo y ciberseguridad innovadora.</p>
+      <a href="#servicios" class="cta">Empieza tu proyecto</a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section" id="servicios">
+      <h2>Nuestros servicios</h2>
+      <p class="subtitle">Apoyamos a personas y empresas en tecnología, desarrollo web y seguridad.</p>
+      <div class="cards">
+        <article class="card"><h3>Desarrollo</h3><p>Aplicaciones web y móviles, UX/UI, integración con APIs y experiencia ágil.</p></article>
+        <article class="card"><h3>Ciberseguridad</h3><p>Auditoría de seguridad, protección de datos, hardening y respuesta ante incidentes.</p></article>
+        <article class="card"><h3>Soporte y formación</h3><p>Capacitaciones, mentoring y soporte continuo para equipos y emprendedores.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <p class="subtitle">Soluciones reales adaptadas a cada necesidad.</p>
+      <div class="project-grid">
+        <article class="project"><h4>Sitio de e-commerce</h4><p>Plataforma moderna con carrito, pagos y dashboard de gestión.</p></article>
+        <article class="project"><h4>Aplicación de monitoreo</h4><p>Panel en tiempo real para métricas de seguridad y disponibilidad.</p></article>
+        <article class="project"><h4>Portal educativo</h4><p>Experiencia responsiva para formación en línea y recursos personalizados.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <h2>Contacto</h2>
+      <p class="subtitle">¿Listo para transformar tu idea en realidad?</p>
+      <form id="contactForm" class="contact-form">
+        <label>Nombre <input type="text" id="name" required></label>
+        <label>Email <input type="email" id="email" required></label>
+        <label>Mensaje <textarea id="message" rows="4" required></textarea></label>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <div id="alert" class="alert" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 SOFTWARE TECHNOLOGY PROJECTS (S-T-P). Todos los derechos reservados.</p>
+    <p>Desarrollo, diseño y seguridad para tu éxito.</p>
+  </footer>
+
+  <script src="./index.js/index.js"></script>
+</body>
+</html>
